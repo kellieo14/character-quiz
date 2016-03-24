@@ -1,3 +1,16 @@
 #char1, #char2, #char3, #char4, #char5 {
   display: none;
 }
+img {
+  max-width: 500px;
+  border: 2px solid black;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+body {
+  text-align: center;
+  padding: 2em;
+}

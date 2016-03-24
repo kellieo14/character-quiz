@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $("form#character").submit(function(event) {
 		event.preventDefault();
+
+    $("#character").hide();
+
     var quest1score = parseInt($("input:radio[name=quest1]:checked").val());
     var quest2score = parseInt($("input:radio[name=quest2]:checked").val());
     var quest3score = parseInt($("input:radio[name=quest3]:checked").val());
