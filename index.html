@@ -5,44 +5,187 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Dating!</title>
+    <title>What Disney Character Am I?</title>
   </head>
   <body>
     <div class="container">
 
-      <h1>It's the Celebrity Dating Suggestor-O-Matic 5000! Enter some details about yourself and it will tell you which celebrity you should date!</h2>
+      <h1>Ever wonder what Disney character you would be in another life? Take our quiz and find out!</h2>
 
-          <form id="dating">
-          <label for="age">Age</label>
-          <input id="age" type="text" required>
+        <form id="character">
 
-          <label for="gender">Gender</label>
-          <select id="gender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-          </select>
+          <h3><strong>Question 1:</strong> Where would you live?</h3>
 
-          <button type="submit" class="btn">Calculate my dream date!</button>
+        <!-- START FIRST QUESTION BUTTONS -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="quest1" value="2" checked>
+                A cave
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="quest1" value="1">
+                A studio apartment
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="quest1" value="4">
+                A palace
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="quest1" value="3">
+                A cage
+              </label>
+            </div>
+
+        <!-- END FIRST QUESTION BUTTONS -->
+
+        <h3><strong>Question 2:</strong> How much do you value your friends?</h3>
+
+      <!-- START FIRST QUESTION BUTTONS -->
+          <div class="radio2">
+            <label>
+              <input type="radio" name="quest2" value="1" checked>
+              A lot
+            </label>
+          </div>
+          <div class="radio2">
+            <label>
+              <input type="radio" name="quest2" value="2">
+              Some
+            </label>
+          </div>
+          <div class="radio2">
+            <label>
+              <input type="radio" name="quest2" value="3">
+              Eh
+            </label>
+          </div>
+          <div class="radio2">
+            <label>
+              <input type="radio" name="quest2" value="4">
+              What friends?
+            </label>
+          </div>
+      <!-- END FIRST QUESTION BUTTONS -->
+
+      <h3><strong>Question 3:</strong> What job would you choose?</h3>
+
+    <!-- START FIRST QUESTION BUTTONS -->
+        <div class="radio">
+          <label>
+            <input type="radio" name="quest3" value="2" checked>
+            Entrepeneur
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quest3" value="3">
+            Food Tester
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quest3" value="1">
+            Magician
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quest3" value="4">
+            Government Official
+          </label>
+        </div>
+    <!-- END FIRST QUESTION BUTTONS -->
+
+    <h3><strong>Question 4:</strong> How would you spend a free evening?</h3>
+
+  <!-- START FIRST QUESTION BUTTONS -->
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest4" value="2" checked>
+          Out On The Town
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest4" value="1">
+          At A Sports Event
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest4" value="3">
+          At Home With A Book
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest4" value="4">
+          Tormenting Small Animals
+        </label>
+      </div>
+  <!-- END FIRST QUESTION BUTTONS -->
+
+  <h3><strong>Question 5:</strong> What's your favorite food?</h3>
+
+<!-- START FIRST QUESTION BUTTONS -->
+    <div class="radio">
+      <label>
+        <input type="radio" name="quest5" value="2" checked>
+        Bread
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="quest5" value="3">
+        Crackers
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="quest5" value="4">
+        Caviar
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="quest5" value="1">
+        Dessert
+      </label>
+    </div>
+<!-- END FIRST QUESTION BUTTONS -->
+
+        <button type="submit" class="btn">What Character Am I?!</button>
         </form>
 
-      <div id="celeb1">
-        <h2>Ryan Reynolds</h2>
-        <img src="img/ryan-reynolds.jpg" alt="Ryan Reynolds!">
+      <div id="char1">
+        <h2>You got... Genie!</h2>
+        <img src="img/genie.jpg" alt="Genie!">
       </div>
 
-      <div id="celeb2">
-        <h2>Matthew McConaughey</h2>
-        <img src="img/matt-mc.jpg" alt="Matt Mc!">
+      <div id="char2">
+        <h2>You got... Aladdin!</h2>
+        <img src="img/aladdin.jpg" alt="Aladdin!">
       </div>
 
-      <div id="celeb3">
-        <h2>Rachel McAdams</h2>
-        <img src="img/rachel-mcadams.jpg" alt="Rachel McAdams!">
+      <div id="char3">
+        <h2>You got... Carpet!</h2>
+        <img src="img/carpet.jpg" alt="Carpet!">
       </div>
 
-      <div id="celeb4">
-        <h2>Betty White</h2>
-        <img src="img/betty-white.jpg" alt="Betty White!">
+      <div id="char4">
+        <h2>You got... Iago!</h2>
+        <img src="img/iago.jpg" alt="Iago!">
+      </div>
+
+      <div id="char5">
+        <h2>You got... Jafar!</h2>
+        <img src="img/jafar.jpg" alt="Jafar!">
       </div>
 
     </div>
