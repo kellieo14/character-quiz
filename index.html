@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>What Disney Character Am I?</title>
   </head>
@@ -12,7 +13,7 @@
 
       <h1>Ever wonder what Aladdin character you would be in another life? Take our quiz and find out!</h2>
 
-        <form id="character">
+      <form id="character">
 
           <h3><strong>Question 1:</strong> Where would you live?</h3>
 
@@ -47,25 +48,25 @@
         <h3><strong>Question 2:</strong> How much do you value your friends?</h3>
 
       <!-- START FIRST QUESTION BUTTONS -->
-          <div class="radio2">
+          <div class="radio">
             <label>
               <input type="radio" name="quest2" value="1" checked>
               A lot
             </label>
           </div>
-          <div class="radio2">
+          <div class="radio">
             <label>
               <input type="radio" name="quest2" value="2">
               Some
             </label>
           </div>
-          <div class="radio2">
+          <div class="radio">
             <label>
               <input type="radio" name="quest2" value="3">
               Eh
             </label>
           </div>
-          <div class="radio2">
+          <div class="radio">
             <label>
               <input type="radio" name="quest2" value="4">
               What friends?
@@ -160,8 +161,10 @@
     </div>
 <!-- END FIRST QUESTION BUTTONS -->
 
-        <button type="submit" class="btn">What Character Am I?!</button>
-        </form>
+        <button type="submit" class="btn btn-primary btn-lg">
+          Which Character Am I?
+        </button>
+  </form>
 
       <div id="char1">
         <h2>You got... Genie!</h2>
@@ -187,6 +190,28 @@
         <h2>You got... Jafar!</h2>
         <img src="img/jafar.jpg" alt="Jafar!">
       </div>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Your Character</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </body>
 </html>

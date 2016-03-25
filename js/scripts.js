@@ -1,8 +1,10 @@
 $(document).ready(function() {
+
+  var characterHtml;
+
   $("form#character").submit(function(event) {
 		event.preventDefault();
 
-    $("#character").hide();
 
     var quest1score = parseInt($("input:radio[name=quest1]:checked").val());
     var quest2score = parseInt($("input:radio[name=quest2]:checked").val());
@@ -13,36 +15,26 @@ $(document).ready(function() {
     var score = quest1score + quest2score + quest3score + quest4score + quest5score;
 
     if (score <= 7) {
-      $("#char1").show();
-      $("#char2").hide();
-      $("#char3").hide();
-      $("#char4").hide();
-      $("#char5").hide();
-    } else if (score <= 10) {
-      $("#char2").show();
-      $("#char1").hide();
-      $("#char3").hide();
-      $("#char4").hide();
-      $("#char5").hide();
-    } else if (score <= 13) {
-      $("#char3").show();
-      $("#char1").hide();
-      $("#char2").hide();
-      $("#char4").hide();
-      $("#char5").hide();
-    } else if (score <= 16) {
-      $("#char4").show();
-      $("#char1").hide();
-      $("#char2").hide();
-      $("#char3").hide();
-      $("#char5").hide();
-    } else {
-      $("#char5").show();
-      $("#char1").hide();
-      $("#char2").hide();
-      $("#char3").hide();
-      $("#char4").hide();
-    }
+      characterHtml = $("#char1").clone();
 
+    } else if (score <= 10) {
+      characterHtml = $("#char2").clone();
+
+    } else if (score <= 13) {
+      characterHtml = $("#char3").clone();
+
+    } else if (score <= 16) {
+      characterHtml = $("#char4").clone();
+
+    } else {
+      characterHtml = $("#char5").clone();
+
+    }
+    var modal = $("#myModal")
+    modal.find('.modal-body').html(characterHtml);
+    modal.modal("show");
+  });
+  $("#myModal").on("hidden.bs.modal", function()  {
+    window.location.reload()
   });
 });

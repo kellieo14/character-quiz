@@ -1,6 +1,10 @@
 #char1, #char2, #char3, #char4, #char5 {
   display: none;
 }
+
+.modal-body #char1,.modal-body #char2,.modal-body #char3,.modal-body #char4,.modal-body #char5 {
+  display: block;
+}
 img {
   max-width: 500px;
   border: 2px solid black;
